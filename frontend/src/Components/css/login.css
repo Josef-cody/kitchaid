@@ -1,0 +1,283 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+}
+body {
+    height: fit-content;
+	background: linear-gradient( #007258, #8abac0, #007258);
+}
+
+.Logo {
+	width: 100px;
+	margin: auto;
+}
+
+.heroVideo {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	z-index: 1000;
+	text-decoration: line-through;
+}
+
+#landingVideo {
+	position: absolute;
+	left: -1%;
+	width: inherit;
+	scale: 1.02;
+}
+
+
+
+@keyframes showMe {
+	0% {
+		opacity: 0;
+	}
+
+	99.9% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+img {
+	margin: auto;
+	max-width: 300px;
+	width: 100%;
+}
+
+
+.loginForm {
+	min-width: 300px;
+	max-width: 400px;
+	padding: 30px 25px;
+	border-radius: 49px 0px / 44px 86px;
+	border-top: 10px double #ff4800;
+	border-bottom: 10px double #ff4800;
+	align-self: center;
+	box-shadow: 0px 0px 25px rgba(174, 241, 255, 0.801);
+	background: linear-gradient( #116459, #5fb9b6, #116459);
+}
+
+
+
+
+
+@media screen and (max-width:599px) {
+
+
+	.heroVideo {
+		transform: scale(1.3);
+	}
+}
+
+@media screen and (max-width:899px) {
+
+
+
+	#landingVideo {
+		transform: scale(3.0);
+		position: absolute;
+		top: 40%;
+	}
+
+}
+
+
+
+
+/* ======== button style ======== */
+.register{
+	display: block;
+	margin: auto;
+	position: relative;
+	bottom: 100px;
+	max-width: 150px;
+	min-width: 150px;
+	padding: .1rem 1.5rem;
+	line-height: 2rem;
+	cursor: pointer;
+	
+}
+.register span{
+	border: none;
+	font-size: .9rem;
+	color: white;
+	background-image: linear-gradient(0deg, #eead82 0%, #FEFAFD 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	filter: drop-shadow(0 2px 2px hsla(290, 100%, 20%, 1));
+}
+
+
+.mainButton {
+	cursor: pointer;
+	position: relative;
+	padding: .1rem 1.5rem;
+	margin: 30px auto;
+	line-height: 2rem;
+	font-size: 2rem;
+	font-weight: 600;
+	text-align: center;
+	border: 1px solid #5fc5b2;
+	background-image: linear-gradient(-180deg, #ffaa89 0%, #FF4800 100%);
+	box-shadow: 0 1rem 1.25rem 0 rgba(19, 82, 71, 0.5),
+		0 -0.25rem 1.5rem rgb(255, 72, 0) inset,
+		0 0.75rem 0.5rem rgba(255, 255, 255, 0.4) inset,
+		0 0.25rem 0.5rem 0 rgb(207, 70, 70) inset;
+}
+
+.mainButton {
+	border-radius: 25px;
+	width: 150px;
+}
+
+.mainButton span {
+	border: none;
+	font-size: .9rem;
+	color: white;
+	background-image: linear-gradient(0deg, #eead82 0%, #FEFAFD 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	filter: drop-shadow(0 2px 2px hsla(290, 100%, 20%, 1));
+}
+
+.mainButton::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0.3rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: calc(100% - 6.5rem);
+	background: #fff;
+	border-radius: 100%;
+
+	opacity: 0.7;
+	background-image: linear-gradient(-270deg, rgba(255, 255, 255, 0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255, 255, 255, 0.00) 100%);
+}
+
+.mainButton::after {
+	content: "";
+	display: block;
+	height: 0.25rem;
+	position: absolute;
+	bottom: 0.75rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: calc(100% - 6.5rem);
+	background: #fff;
+	border-radius: 100%;
+
+	filter: blur(1px);
+	opacity: 0.05;
+	background-image: linear-gradient(-270deg, rgba(255, 255, 255, 0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255, 255, 255, 0.00) 100%);
+}
+
+.mainButton:hover {
+	transform: translateY(-3px);
+	transform: scale(1.05);
+}
+
+/* ========= Registrera modal ========== */
+
+
+.registModal {
+	background: rgba(14, 66, 66);
+	position: absolute;
+	top: 100px;
+	right: 25%;
+	display: none;
+	width: 50%;
+	height: 70%;
+}
+
+.registModalContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	z-index: 1;
+	/* Sit on top */
+	color: white;
+}
+
+.registModal span {
+	position: absolute;
+	top: -10px;
+	right: 8px;
+	color: rgb(255, 255, 255);
+	font-size: 35px;
+	font-weight: bold;
+	z-index: 2;
+}
+
+
+
+
+.close:hover,
+.close:focus {
+	color: red;
+	cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.registAnimate {
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+	from {
+		-webkit-transform: scale(0)
+	}
+
+	to {
+		-webkit-transform: scale(1)
+	}
+}
+
+@keyframes animatezoom {
+	from {
+		transform: scale(0)
+	}
+
+	to {
+		transform: scale(1)
+	}
+}
+
+@media screen and (max-width:600px) {
+	.registModal {
+		width: 400px;
+		height: max-content;
+	}
+}
+
+footer{
+	color: white;
+}
+
+/* @media screen and (max-width:800px) {
+	.registModal{
+		max-width: 650px;
+		height: max-content;
+	}
+  }
+  @media screen and (max-width:1200px) {
+	.registModal{
+		max-width: 950px;
+		height: max-content;
+	}
+  }
+  @media screen and (max-width:1440px) {
+	.registModal{
+		max-width: 950px;
+		height: max-content;
+	}
+  } */

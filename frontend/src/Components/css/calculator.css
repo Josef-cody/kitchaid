@@ -1,0 +1,39 @@
+.btnC {
+  width: 1.8em;
+  height: 1.8em;
+  font-size: 1.4em;
+  border: none;
+  border-radius: 2em;
+  margin: 0.3em;
+}
+
+.btnC:hover {
+  cursor: pointer;
+}
+
+.wrapper {
+  background-color: rgb(18, 121, 109);
+  width: 250px;
+  height: 450px;
+  border-radius: 1em;
+  padding: 10px;
+}
+
+.orange {
+  background-color: #FF9500;
+  color: white;
+}
+
+.grey {
+  background-color: #505050;
+  color: white;
+}
+
+.result {
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: .8em;
+  margin-top: -1.5em;
+  font-size: 2.5em;
+}
